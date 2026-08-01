@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎁 藍藍生日快樂！</title>
+  <title>🎁 銘亨生日快樂！</title>
   <style>
     * {
       box-sizing: border-box;
@@ -188,8 +188,8 @@
 </head>
 <body>
 
-  <!-- 音樂標籤 -->
-  <audio id="audioPanther" src="The Pink Panther Theme (Full).mp3" loop></audio>
+  <!-- 音樂標籤 (已修改檔名為 Pink.mp3) -->
+  <audio id="audioPanther" src="Pink.mp3" loop></audio>
   <audio id="audioHaidilao" src="海底撈生日快樂歌.mp3" loop></audio>
 
   <!-- 星空與流星雨背景 -->
@@ -199,20 +199,20 @@
     
     <!-- 0. 啟動頁面 (解決瀏覽器自動播放限制) -->
     <div id="step-start" class="section active">
-      <h2>🎉 藍藍專屬生日驚喜 🎉</h2>
+      <h2>🎉 銘亨專屬生日驚喜 🎉</h2>
       <p style="color: #b8c0ff; margin: 20px 0; font-size: 1.1rem; line-height: 1.6;">
         點擊下方按鈕啟動音樂與驚喜體驗 🎵
       </p>
-      <button class="btn" style="font-size: 1.3rem; padding: 15px 35px;" onclick="startExperience()">✨ 開啟藍藍的生日禮物 ✨</button>
+      <button class="btn" style="font-size: 1.3rem; padding: 15px 35px;" onclick="startExperience()">✨ 開啟銘亨的生日禮物 ✨</button>
     </div>
 
     <!-- 1 & 2. 倒計時畫面 -->
     <div id="step1" class="section">
       <h2>🎁 神秘生日祝福準備中</h2>
-      <p style="color: #b8c0ff;">等待藍藍的生日驚喜⌛️</p>
+      <p style="color: #b8c0ff;">等待銘亨的生日驚喜⌛️</p>
       
       <div class="timer-box">
-        距離 2026/07/31 00:00 還有：<br>
+        距離 2026/07/24 00:00 還有：<br>
         <span id="countdown" style="font-size: 1.5rem; font-weight: bold; color: #fff;">計算中...</span>
       </div>
 
@@ -265,7 +265,7 @@
 
     <!-- 6. 第一首藏頭詩 -->
     <div id="step-poem1" class="section">
-      <h2>㊗️ <span class="color-gold">藍藍</span> 生日快肉！</h2>
+      <h2>㊗️ <span class="color-gold">銘亨</span> 生日快肉！</h2>
       
       <div id="poem1-box" style="margin: 30px 0;">
         <div class="poem-line" id="p1-1"><span class="char1">生</span>性高雅顯風範，</div>
@@ -291,7 +291,7 @@
       <p style="margin-top: 15px; color: #a2d2ff; font-size: 1rem;">藏頭又藏尾，完美✨</p>
       
       <p style="margin-top: 30px; color: #ffd700; font-weight: bold; font-size: 1.1rem;">
-        20260731 By Laura | 蘿拉
+        20260724 By Laura | 蘿拉
       </p>
     </div>
 
@@ -370,7 +370,7 @@
     const audioPanther = document.getElementById('audioPanther');
     const audioHaidilao = document.getElementById('audioHaidilao');
 
-    // 點擊「開啟藍藍的生日禮物」啟動體驗與播放頑皮豹
+    // 點擊「開啟銘亨的生日禮物」啟動體驗與播放頑皮豹音樂
     function startExperience() {
       playPanther();
       showSection('step1');
@@ -387,7 +387,7 @@
     }
 
     /* 3. 倒計時 */
-    const targetDate = new Date("2026-07-31T00:00:00").getTime();
+    const targetDate = new Date("2026-07-24T00:00:00").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
