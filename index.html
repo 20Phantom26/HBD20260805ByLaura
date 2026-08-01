@@ -164,6 +164,13 @@
       transform: translateX(-20px);
       transition: all 0.8s ease;
       letter-spacing: 2px;
+      text-align: center;
+    }
+
+    /* 第二首詩專用間距與對齊調整 */
+    .poem-line-spaced {
+      letter-spacing: 6px;
+      padding-left: 6px; /* 抵銷最後一個字的 letter-spacing 偏向 */
     }
 
     .poem-line.show {
@@ -282,10 +289,10 @@
       <h2>💫 完美的祝福 💫</h2>
       
       <div id="poem2-box" style="margin: 30px 0;">
-        <div class="poem-line" id="p2-1"><span class="head-char">生</span>日快樂<span class="tail-char">生</span></div>
-        <div class="poem-line" id="p2-2"><span class="head-char">日</span>快樂生<span class="tail-char">日</span></div>
-        <div class="poem-line" id="p2-3"><span class="head-char">快</span>樂生日<span class="tail-char">快</span></div>
-        <div class="poem-line" id="p2-4"><span class="head-char">樂</span>生日快<span class="tail-char">樂</span></div>
+        <div class="poem-line poem-line-spaced" id="p2-1"><span class="head-char">生</span>日快樂<span class="tail-char">生</span></div>
+        <div class="poem-line poem-line-spaced" id="p2-2"><span class="head-char">日</span>快樂生<span class="tail-char">日</span></div>
+        <div class="poem-line poem-line-spaced" id="p2-3"><span class="head-char">快</span>樂生日<span class="tail-char">快</span></div>
+        <div class="poem-line poem-line-spaced" id="p2-4"><span class="head-char">樂</span>生日快<span class="tail-char">樂</span></div>
       </div>
 
       <p style="margin-top: 15px; color: #a2d2ff; font-size: 1rem;">藏頭又藏尾，完美✨</p>
